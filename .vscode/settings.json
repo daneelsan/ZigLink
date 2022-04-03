@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.wl": "wolfram",
+        "wolframlibrary.h": "c",
+        "wolframnumericarraylibrary.h": "c"
+    }
+}
