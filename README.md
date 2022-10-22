@@ -90,8 +90,7 @@ LibraryResources/Windows-x86-64/demo_string.lib
 Note: The current paths to Mathematica's headers and libraries is hardcoded in `build.zig`:
 
 ```zig
-    const c_headers = "/Applications/Mathematica.app/Contents/SystemFiles/IncludeFiles/C";
-    const libraries = "/Applications/Mathematica.app/Contents/SystemFiles/Libraries/MacOSX-ARM64";
+    const mathematica_path = "/Applications/Mathematica.app";
 ```
 
 so modify these as appropriate.
@@ -128,56 +127,56 @@ Here is a list of the files that need to be translated (and the ones that alread
 
 #### headers:
 
-- [ ] WolframCompileLibrary.h
-- [ ] WolframImageLibrary.h
-- [ ] WolframIOLibraryFunctions.h
-- [x] WolframLibrary.h
-- [x] WolframNumericArrayLibrary.h
-- [ ] WolframRawArrayLibrary.h
-- [ ] WolframRTL.h
-- [ ] WolframSparseLibrary.h
-- [ ] WolframStreamsLibrary.h
+-   [ ] WolframCompileLibrary.h
+-   [ ] WolframImageLibrary.h
+-   [ ] WolframIOLibraryFunctions.h
+-   [x] WolframLibrary.h
+-   [x] WolframNumericArrayLibrary.h
+-   [ ] WolframRawArrayLibrary.h
+-   [ ] WolframRTL.h
+-   [ ] WolframSparseLibrary.h
+-   [ ] WolframStreamsLibrary.h
 
 #### demos:
 
-- [ ] arbitraryTensor.c
-- [ ] async-examples-libmain.c
-- [ ] async-examples.h
-- [ ] async-tasks-oneshot.c
-- [ ] async-tasks-repeating.c
-- [ ] async-tasks-timing.c
-- [ ] async-tasks-without-thread.c
-- [ ] demo_callback.c
-- [x] demo_error.c
-- [ ] demo_eval.c
-- [ ] demo_image.cxx
-- [ ] demo_LinkObject.c
-- [x] demo_managed.cxx
-- [ ] demo_numerical.c
-- [x] demo_numericarray.cxx
-- [x] demo_shared.c
-- [ ] demo_sparse.c
-- [x] demo_string.c
-- [ ] demo.c
-- [ ] image_external.c
-- [ ] image_video.cxx
+-   [ ] arbitraryTensor.c
+-   [ ] async-examples-libmain.c
+-   [ ] async-examples.h
+-   [ ] async-tasks-oneshot.c
+-   [ ] async-tasks-repeating.c
+-   [ ] async-tasks-timing.c
+-   [ ] async-tasks-without-thread.c
+-   [ ] demo_callback.c
+-   [x] demo_error.c
+-   [ ] demo_eval.c
+-   [ ] demo_image.cxx
+-   [x] demo_LinkObject.c
+-   [x] demo_managed.cxx
+-   [ ] demo_numerical.c
+-   [x] demo_numericarray.cxx
+-   [x] demo_shared.c
+-   [ ] demo_sparse.c
+-   [x] demo_string.c
+-   [ ] demo.c
+-   [ ] image_external.c
+-   [ ] image_video.cxx
 
 ## References
 
 LibraryLink:
 
-- https://reference.wolfram.com/language/LibraryLink/tutorial/Overview.html
-- https://reference.wolfram.com/language/guide/LibraryLink.html
+-   https://reference.wolfram.com/language/LibraryLink/tutorial/Overview.html
+-   https://reference.wolfram.com/language/guide/LibraryLink.html
 
 Zig:
 
-- https://ziglearn.org
-- https://ziglang.org
-- https://github.com/ziglang/zig
-- https://ziglang.org/documentation/
-- https://www.lagerdata.com/articles/an-intro-to-zigs-integer-casting-for-c-programmers
-- https://zig.news/xq/zig-build-explained-part-1-59lf
+-   https://ziglearn.org
+-   https://ziglang.org
+-   https://github.com/ziglang/zig
+-   https://ziglang.org/documentation/
+-   https://www.lagerdata.com/articles/an-intro-to-zigs-integer-casting-for-c-programmers
+-   https://zig.news/xq/zig-build-explained-part-1-59lf
 
 Other:
 
-- https://github.com/WolframResearch/wolfram-library-link-rs
+-   https://github.com/WolframResearch/wolfram-library-link-rs
